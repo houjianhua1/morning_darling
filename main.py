@@ -151,7 +151,7 @@ data = {
   },
 }
 
-if __name__ == '__main__':
+/*if __name__ == '__main__':
   count = 0
   try:
     for user_id in user_ids:
@@ -161,4 +161,4 @@ if __name__ == '__main__':
     print('微信端返回错误：%s。错误代码：%d' % (e.errmsg, e.errcode))
     exit(502)
 
-  print("发送了" + str(count) + "条消息")
+  print("发送了" + str(count) + "条消息")*/
