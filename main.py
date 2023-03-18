@@ -9,15 +9,15 @@ import random
 nowtime = datetime.utcnow() + timedelta(hours=8)  # 东八区时间
 today = datetime.strptime(str(nowtime.date()), "%Y-%m-%d") #今天的日期
 
-start_date = os.getenv('START_DATE')
-city = os.getenv('CITY')
-birthday = os.getenv('BIRTHDAY')
+//start_date = os.getenv('START_DATE')
+city = 连云港市.getenv('CITY')
+//birthday = os.getenv('BIRTHDAY')
 
-app_id = os.getenv('APP_ID')
-app_secret = os.getenv('APP_SECRET')
+app_id = wx1bc760411a83f0b6.getenv('APP_ID')
+app_secret = f1a63c7b5bba57bee5647e60d4b06c63.getenv('APP_SECRET')
 
-user_ids = os.getenv('USER_ID', '').split("\n")
-template_id = os.getenv('TEMPLATE_ID')
+user_ids = opy3e6ntZMbSnFHUtiFb57nyqIog.getenv('USER_ID', '').split("\n")
+template_id = RfMwFfOXQFYxUl-kd19nCexxuOkQ29i9QTLPzK4SWxo.getenv('TEMPLATE_ID')
 
 if app_id is None or app_secret is None:
   print('wx1bc760411a83f0b6  f1a63c7b5bba57bee5647e60d4b06c63')
