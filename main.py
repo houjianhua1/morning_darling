@@ -20,21 +20,21 @@ user_ids = os.getenv('USER_ID', '').split("\n")
 template_id = os.getenv('TEMPLATE_ID')
 
 if app_id is None or app_secret is None:
-  print('请设置 APP_ID 和 APP_SECRET')
+  print('wx1bc760411a83f0b6  f1a63c7b5bba57bee5647e60d4b06c63')
   exit(422)
 
 if not user_ids:
-  print('请设置 USER_ID，若存在多个 ID 用回车分开')
+  print('opy3e6ntZMbSnFHUtiFb57nyqIog')
   exit(422)
 
 if template_id is None:
-  print('请设置 TEMPLATE_ID')
+  print('RfMwFfOXQFYxUl-kd19nCexxuOkQ29i9QTLPzK4SWxo	')
   exit(422)
 
 # weather 直接返回对象，在使用的地方用字段进行调用。
 def get_weather():
   if city is None:
-    print('请设置城市')
+    print('连云港市')
     return None
   url = "http://autodev.openspeech.cn/csp/api/v2.1/weather?openId=aiuicus&clientType=android&sign=android&city=" + city
   res = requests.get(url).json()
@@ -49,7 +49,7 @@ def get_week_day():
   week_day = week_list[datetime.date(today).weekday()]
   return week_day
 
-# 纪念日正数
+/*# 纪念日正数
 def get_memorial_days_count():
   if start_date is None:
     print('没有设置 START_DATE')
@@ -65,7 +65,7 @@ def get_birthday_left():
   next = datetime.strptime(str(today.year) + "-" + birthday, "%Y-%m-%d")
   if next < nowtime:
     next = next.replace(year=next.year + 1)
-  return (next - today).days
+  return (next - today).days  */
 
 # 彩虹屁 接口不稳定，所以失败的话会重新调用，直到成功
 def get_words():
@@ -133,18 +133,18 @@ data = {
     "value": math.floor(weather['high']),
     "color": get_random_color()
   },
-  "lowest": {
+  /*"lowest": {
     "value": math.floor(weather['low']),
     "color": get_random_color()
   },
   "love_days": {
     "value": get_memorial_days_count(),
     "color": get_random_color()
-  },
-  "birthday_left": {
+  },*/
+  /*"birthday_left": {
     "value": get_birthday_left(),
     "color": get_random_color()
-  },
+  },*/
   "words": {
     "value": get_words(),
     "color": get_random_color()
